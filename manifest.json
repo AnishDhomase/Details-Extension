@@ -1,0 +1,13 @@
+{
+  "name": "Details Ext",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "pencil.png"
+  },
+  "icons": {
+    "128": "pencil.png"
+  },
+  "permissions": ["activeTab"]
+}

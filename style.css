@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  width: 550px;
+  padding: 20px;
+  background-color: black;
+  background-image: url;
+  font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+main {
+  background-color: rgba(2, 0, 40, 0.585);
+  border: 2px solid rgba(97, 94, 94, 0.523);
+
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mainTitle{
+    margin: 0 auto;
+}
+
+.block{
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgba(97, 94, 94, 0.523);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.062);
+}
+.block.active{
+
+}
+
+
+.blockTitle{
+    color: rgb(239, 122, 79);
+    margin: 0 auto;
+}
+.blockDetails{
+    display: none;
+}
+.blockDetails.active{
+    display: block;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cursorDefault{
+    cursor: default !important;
+}
+
+.title {
+  color: rgb(46, 171, 243);
+  font-size: 23px;
+}
+.uderline{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(67, 60, 60);
+}
+
+.extra.active {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.extra {
+  display: none;
+  color: rgb(189, 181, 181);
+  padding-left: 30px;
+}
+button.expand {
+    display: block;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+button.expand i {
+  color: blue;
+  font-size: 40px;
+}
+
+.toCopy:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.toCopy.copied {
+  color: rgb(138, 255, 138);
+}
+.details a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.details a:hover{
+    scale: 1.1;
+}
+.details.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details.link .toCopy{
+    display: inline-block;
+    max-width: 380px;
+    overflow-x: hidden;
+}
+.toCopy{
+    display: inline-block;
+    max-width: 450px;
+    overflow-x: hidden;
+}
+
+.details.active {
+  background-color: yellow;
+}
